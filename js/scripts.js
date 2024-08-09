@@ -380,16 +380,20 @@
     document.querySelectorAll('.accordion-button').forEach(button => {
         button.addEventListener('click', () => {
             const accordionContent = button.nextElementSibling;
+            const accordionIcon = button.querySelector('.accordion-icon');
     
             button.classList.toggle('active');
     
             if (button.classList.contains('active')) {
                 accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+                accordionIcon.textContent = '-';
             } else {
                 accordionContent.style.maxHeight = 0;
+                accordionIcon.textContent = '+';
             }
         });
     });
+    
     
 
     /* Back To Top Button */
