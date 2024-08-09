@@ -96,9 +96,11 @@ h6 {
 }
 
 .above-heading {
+	margin-bottom: 20px;
 	color: #5f4dee;
 	font: 700 0.75rem/0.875rem "Open Sans", sans-serif;
 	text-align: center;
+	font-size: 35px;
 }
 
 .p-heading {
@@ -783,6 +785,7 @@ input[type='checkbox'] {
 /*********************/
 .header {
 	background-color: #5f4dee;
+
 }
 
 .header .header-content {
@@ -2014,6 +2017,46 @@ a:hover.back-to-top {
 	}
 	/* end of header */
 	
+	.accordion {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.accordion-item {
+}
+
+.accordion-button {
+    width: 100%;
+    background: #5f4dee;
+    border: none;
+		border-radius: 10px;
+    outline: none;
+    padding: 15px;
+    text-align: left;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-button:hover {
+    background-color: #ddd;
+		color: #333;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 15px;
+		padding: 10px;
+
+}
+
+.accordion-content p {
+    padding: 15px 0;
+    margin: 0;
+}
 
 	/* Customer */
 	.slider-1 .slider-container {
@@ -2021,7 +2064,11 @@ a:hover.back-to-top {
 		margin-left: 3rem;
 	}
 	/* end of customer */
-
+	.card:hover {
+    transform: scale(1.05); /* Увеличение карточки при наведении */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень при наведении */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Плавный переход */
+}
 
 	/* Description */
 	.cards-1 .card {
